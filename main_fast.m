@@ -131,16 +131,16 @@ for nn=1:lenN
     
 end
 
-if calctype == 1
-    save data_volt_10sites2 cond_zero_d cond_zero_u condl_d...
-        condl_u P_s Temperature de DD epn tn Len GaL GaR GaP voltage delta_phi theta so...
-        len_n len_c len_1 P_zero
-elseif calctype == 2
-    save data_deph
-end
-
-clearvars -except data_volt_30sites cond_zero_d cond_zero_u condl_d condl_u...
-          Temperature de DD epn tn Len GaL GaR GaP voltage delta_phi theta so...
-          len_n len_c len_1 P_s P_zero
+% if calctype == 1
+%     save data_volt_10sites2 cond_zero_d cond_zero_u condl_d...
+%         condl_u P_s Temperature de DD epn tn Len GaL GaR GaP voltage delta_phi theta so...
+%         len_n len_c len_1 P_zero
+% elseif calctype == 2
+%     save data_deph
+% end
+% 
+% clearvars -except data_volt_30sites cond_zero_d cond_zero_u condl_d condl_u...
+%           Temperature de DD epn tn Len GaL GaR GaP voltage delta_phi theta so...
+%           len_n len_c len_1 P_s P_zero
 
 toc

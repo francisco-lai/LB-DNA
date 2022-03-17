@@ -10,9 +10,9 @@ KB=kb/ee1; %Boltzmann constant in eV/K
 TT=Temperature.*KB; % temperature in eV (k_B*T)
 bb_in=1./TT; %inverse temperature
 
-epn=0; tn=1; Len=[1:15];
-GaL=1; % coupling of first site to L
-GaR=1;  % coupling energy of last site to R
+epn=0; tn=1; Len=[1:10];
+GaL=2; % coupling of first site to L
+GaR=2;  % coupling energy of last site to R
 GaP=0.06*tn; %dephasing strength
 
 voltage=0.05; %voltage bias on electrodes
@@ -24,6 +24,8 @@ delta_phi = 5*pi/9; %change in phi angle
 phi_0 = 0; % starting phi angle
 theta = 0.66; %theta angle
 so = 0.12*tn; % spin orbit factor
+R = 2.5; % radius of the DNA
+delta_h = 1.5; %stack height
 
 %Beyond nearest neighbor parameters
 tn_1 = tn; %transmission value first site to second site

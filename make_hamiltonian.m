@@ -15,10 +15,10 @@ function [hh_up, hh_down] = make_hamiltonian(site_energy, coupling, length)
     hh_up = zeros(Ln) ; hh_down = zeros(Ln);
     
     for jj=1:1:Ln-1 %make hamiltonian matrix spin up
-        hh_up(jj,jj)=epn; %; hh_up(jj,jj+1)=tn; hh_up(jj+1,jj)=tn;
+        hh_up(jj,jj)=epn;  %hh_up(jj,jj+1)=tn; hh_up(jj+1,jj)=tn;
     end
     for jj=1:1:Ln-1 %make hamiltonian matrix spin down
-        hh_down(jj,jj)=epn; %; hh_down(jj,jj+1)=tn; hh_down(jj+1,jj)=tn;
+        hh_down(jj,jj)=epn;  %hh_down(jj,jj+1)=tn; hh_down(jj+1,jj)=tn;
     end
     
     hh_up(end,end)=epn; % hamiltonian spin up
